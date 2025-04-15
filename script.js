@@ -2,11 +2,9 @@
 const textArea = document.getElementById('evaluatedText');
 const letters = document.getElementById('letterCount');
 
-let count = 0;
 
 textArea.addEventListener('input', ()=>{
-
-	count++;
+const count = textArea.value.length;
 	letters.textContent = count;
 })
 
